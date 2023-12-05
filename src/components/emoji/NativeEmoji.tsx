@@ -13,10 +13,15 @@ export function NativeEmoji({
   return (
     <span
       className={clsx(ClassNames.external, 'epr-emoji-native')}
-      data-unified={unified}
-      style={style}
     >
-      {parseNativeEmoji(unified)}
+      <span
+        data-unified={unified}
+        style={style}
+        data-id={`emoji-${unified}`}
+        draggable={true}
+      >
+        {parseNativeEmoji(unified)}
+      </span>
     </span>
   );
 }

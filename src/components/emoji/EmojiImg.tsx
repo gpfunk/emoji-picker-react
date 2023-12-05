@@ -22,10 +22,10 @@ export function EmojiImg({
       src={imgUrl}
       alt={emojiName}
       className={clsx(ClassNames.external, 'epr-emoji-img')}
-      data-id={`emoji-${emojiName}`}
       loading={lazyLoad ? 'lazy' : 'eager'}
       onError={onError}
       style={style}
+      data-id={`emoji-${emojiName}`}
       draggable={true}
     />
   );
