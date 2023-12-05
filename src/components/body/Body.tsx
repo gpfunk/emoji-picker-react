@@ -7,7 +7,7 @@ import { useOnScroll } from '../../hooks/useOnScroll';
 import { useBodyRef } from '../context/ElementRefContext';
 
 import { EmojiList } from './EmojiList';
-import { EmojiVariationPicker } from './EmojiVariationPicker';
+// import { EmojiVariationPicker } from './EmojiVariationPicker';
 
 import './Body.css';
 
@@ -19,7 +19,7 @@ export function Body() {
 
   return (
     <div className={ClassNames.scrollBody} ref={BodyRef}>
-      <EmojiVariationPicker />
+      {/* <EmojiVariationPicker /> */}
       <EmojiList />
     </div>
   );

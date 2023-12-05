@@ -19,8 +19,8 @@ export function ClickableEmojiButton({
   unified,
   hidden,
   hiddenOnSearch,
-  showVariations = true,
-  hasVariations,
+  // showVariations = true,
+  // hasVariations,
   children
 }: ClickableEmojiButtonProps) {
   return (
@@ -29,7 +29,7 @@ export function ClickableEmojiButton({
         [ClassNames.hidden]: hidden,
         [ClassNames.hiddenOnSearch]: hiddenOnSearch,
         [ClassNames.visible]: !hidden && !hiddenOnSearch,
-        [ClassNames.emojiHasVariations]: hasVariations && showVariations
+        // [ClassNames.emojiHasVariations]: hasVariations && showVariations
       })}
       data-unified={unified}
       aria-label={emojiNames[0]}
