@@ -35,7 +35,7 @@ export default meta;
 export const Native = (args: Props) => (
   <Template {...args} emojiStyle={EmojiStyle.NATIVE} />
 );
-export const Default = (args: Props) => <Template {...args} />;
+export const Default = (args: Props) => <Template {...args} emojiStyle={EmojiStyle.GOOGLE} />;
 export const Dark = (args: Props) => (
   <TemplateDark {...args} theme={Theme.DARK} />
 );
